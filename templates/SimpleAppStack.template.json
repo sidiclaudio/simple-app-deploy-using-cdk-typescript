@@ -1,0 +1,32 @@
+{
+  "Resources": {
+    "ClaudioCdkBucketTest91AC1FA3": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "SimpleAppStack/ClaudioCdkBucketTest/Resource"
+      }
+    }
+  },
+  "Outputs": {
+    "ClaudioCdkBucketTestExport": {
+      "Description": "a random description",
+      "Value": "ClaudioCdkBucketTestExport",
+      "Export": {
+        "Name": "ClaudioCdkBucketTestExportName"
+      }
+    }
+  }
+}
