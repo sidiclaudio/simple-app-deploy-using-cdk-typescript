@@ -1,0 +1,1 @@
+# simple-app-deploy-using-cdk-typescript
